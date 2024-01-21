@@ -5,6 +5,7 @@
 :root {
     --cor-branco: white;
     --cor-preto: black;
+    --cor-transparente: rgba(0 0 0 0);
     --cor-principal: #333333;
     --cor-destaque-claro: #555555;
     --cor-destaque-escuro: #2c2c2c;
@@ -18,11 +19,25 @@
     padding: 0px;
 }
 
-.corpo {
+#corpo {
     background-color: var(--cor-principal);
     font-family: var(--fonte);
 }
 
 body {
      
+}
+
+nav {
+    background-color: var(--cor-transparente);
+    height: 70px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+nav>.botao {
+
 }
