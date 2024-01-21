@@ -30,12 +30,14 @@ body {
 
 nav {
     background-color: var(--cor-transparente);
-    height: 70px;
+    height: 75px;
 }
 
 nav ul {
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
+    margin: 20px 10px;
 }
 
 nav>.botao {
