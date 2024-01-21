@@ -41,5 +41,8 @@ nav ul {
 }
 
 nav>.botao {
-
+    border-color: var(--cor-transparente);
+    background-color: var(--cor-transparente );
+    color: var(--cor-branco);
+    
 }
