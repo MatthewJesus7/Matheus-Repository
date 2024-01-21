@@ -21,6 +21,7 @@
 
 #corpo {
     background-color: var(--cor-principal);
+    color: var(--cor-branco);
     font-family: var(--fonte);
 }
 
@@ -38,11 +39,17 @@ nav ul {
     flex-direction: row;
     justify-content: space-between;
     margin: 20px 10px;
+    list-style: none;
+}
+
+nav li {
+    height: 50px;
+    width: 50px;
 }
 
 nav>.botao {
     border-color: var(--cor-transparente);
     background-color: var(--cor-transparente );
     color: var(--cor-branco);
-    
+
 }
