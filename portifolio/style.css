@@ -32,7 +32,6 @@ body {
 nav {
     background-color: var(--cor-transparente);
     height: 75px;
-    position: absolute;
     top: 0px;
     left: 0px;
 }
@@ -50,12 +49,26 @@ nav li {
     width: 50px;
 }
 
-nav>button {
+li.nome {
+    
+}
+
+nav button{
     border-color: var(--cor-transparente);
     background-color: var(--cor-transparente);
     color: var(--cor-branco);
     height: 50px;
     width: 50px;
+    font-size: 30px;
+    border-width: 0px;
+}
+
+nav button:hover {
+
+}
+
+nav button p {
+    
 }
 
 main {
