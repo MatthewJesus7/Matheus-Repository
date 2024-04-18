@@ -20,49 +20,45 @@
     padding: 0px;
 }
 
-#corpo {
-    background-color: var(--cor-principal);
-    color: var(--cor-branco);
-    font-family: var(--fonte);
-    font-size: 20px;
+html, body {
+    height: 97vh;
+    width: 97vw;
+    padding: 5px;
+} 
+
+li {
+    list-style: none;
 }
 
 body {
-     
+    background-color: var(--cor-principal);
+    color: var(--cor-branco);
+    font: normal 20px var(--fonte);
 }
 
-header {
-    
-}
 
 nav {
-    position: sticky;
     background-color: var(--cor-transparente);
-    height: 75px;
 }
 
 nav ul {
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
-    list-style: none;
 }
 
 nav ul button:active {
     position: fixed;
     right: 210px;
-    transition-duration: 0.6s;
+    transition: all 0.6s;
 }
 
-nav li {
-    height: 50px;
-    width: 50px;
-    margin: 10px;
-}
+/* nav .inav {
+   
+} */
 
-li.nome {
+/* li.nome {
     
-}
+} */
 
 li a {
     color: var(--cor-branco);
@@ -70,17 +66,16 @@ li a {
     font-size: 20px;
 }
 
-li.nome :active {
+/* li.nome :active {
 
-}
+} */
 
-nav button{
-    border-color: var(--cor-transparente);
+nav button{ 
     background-color: var(--cor-transparente);
     color: var(--cor-branco);
     height: 50px;
     width: 50px;
-    border-width: 0px;
+    border: 0px solid var(--cor-transparente);
     border-radius: 5px;
     transition-duration: 0.6s;
 }
@@ -93,24 +88,12 @@ nav button:active {
     background-color: var(--cor-destaque-escuro);
 }
 
-
-nav button p {
-    background-color: var(--cor-destaque-escuro02);
-    height: 5px;
-    margin: 5px;
-    border-radius: 2px;
-}
-
 menu {
-    display: flex;
-    flex-direction: column;
-    list-style: none;
     position: fixed;
     top: 0px;
     right: -200px;
     width: 200px;
     height: 100%;
-    font-size: 20px;
     transition-duration: 0.6s;
 }
 
@@ -122,21 +105,23 @@ nav button:active menu {
 
 
 menu ul {
-    flex-direction: column;
-    justify-items: center;
-    align-items: center;
+    display: block;
 }
 
 menu li{
+    
     width: 200px;
+    height: 40px;
+    padding-top: 18px;    
+    
 }
 
 menu li:hover {
-    background-color: var(--cor-principal);
-    transition-duration: 0.2s;
+    width: 100%;
+    background-image: linear-gradient(90deg, var(--cor-principal), var(--cor-destaque-escuro02)) ;
 }
 
-.sobre {
+/* .sobre {
     
 }
 
@@ -150,11 +135,4 @@ menu li:hover {
 
 .progresso {
 
-}
-main {
-    max-width: 1200px;
-    min-width: 320px;
-    margin: auto;
-}
-
-
+} */
