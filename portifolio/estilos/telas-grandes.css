@@ -1,2 +1,35 @@
 @charset "utf-8";
 
+
+menu {
+    position: fixed;
+    top: 0px;
+    right: -200px;
+    width: 200px;
+    height: 100%;
+    transition-duration: 0.6s;
+}
+
+nav button:active menu {
+    background-color: var(--cor-destaque-escuro02);
+    right: 0px;
+    transition-duration: 0.6s;
+}
+
+
+menu ul {
+    display: block;
+}
+
+menu li{
+    
+    width: 200px;
+    height: 40px;
+    padding-top: 18px;    
+    
+}
+
+menu li:hover {
+    width: 100%;
+    background-image: linear-gradient(90deg, var(--cor-principal), var(--cor-destaque-escuro02)) ;
+}
