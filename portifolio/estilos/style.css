@@ -26,9 +26,7 @@ html, body {
     padding: 5px;
 } 
 
-li {
-    list-style: none;
-}
+
 
 body {
     background-color: var(--cor-principal);
@@ -36,20 +34,14 @@ body {
     font: normal 20px var(--fonte);
 }
 
+/* nav {
+    
+} */
 
-nav {
+#navbar .ulnavbar {
     background-color: var(--cor-transparente);
-}
-
-nav ul {
     display: flex;
     justify-content: space-between;
-}
-
-nav ul button:active {
-    position: fixed;
-    right: 210px;
-    transition: all 0.6s;
 }
 
 /* nav .inav {
@@ -59,6 +51,10 @@ nav ul button:active {
 /* li.nome {
     
 } */
+
+li {
+    list-style: none;
+}
 
 li a {
     color: var(--cor-branco);
@@ -89,27 +85,19 @@ nav button:active {
 }
 
 menu {
-    position: fixed;
+    /* position: fixed;
     top: 0px;
     right: -200px;
-    width: 200px;
+    width: 200px; */
     height: 100%;
     transition-duration: 0.6s;
 }
-
-nav button:active menu {
-    background-color: var(--cor-destaque-escuro02);
-    right: 0px;
-    transition-duration: 0.6s;
-}
-
 
 menu ul {
     display: block;
 }
 
-menu li{
-    
+menu li {
     width: 200px;
     height: 40px;
     padding-top: 18px;    
@@ -118,7 +106,7 @@ menu li{
 
 menu li:hover {
     width: 100%;
-    background-image: linear-gradient(90deg, var(--cor-principal), var(--cor-destaque-escuro02)) ;
+    background-image: linear-gradient(90deg, var(--cor-principal), var(--cor-destaque-escuro02));
 }
 
 /* .sobre {
