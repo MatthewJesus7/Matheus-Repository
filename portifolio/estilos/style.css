@@ -87,8 +87,8 @@ nav button:active {
 menu {
     /* position: fixed;
     top: 0px;
-    right: -200px;
-    width: 200px; */
+    right: -200px; */
+    width: 200px;
     height: 100%;
     transition-duration: 0.6s;
 }
@@ -98,6 +98,7 @@ menu ul {
 }
 
 menu li {
+    text-align: center;
     width: 200px;
     height: 40px;
     padding-top: 18px;    
@@ -105,22 +106,6 @@ menu li {
 }
 
 menu li:hover {
-    width: 100%;
+    width: 200px;
     background-image: linear-gradient(90deg, var(--cor-principal), var(--cor-destaque-escuro02));
 }
-
-/* .sobre {
-    
-}
-
-.sobre:hover {
-    
-}
-
-.carreira {
-
-}
-
-.progresso {
-
-} */

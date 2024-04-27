@@ -1,17 +1,16 @@
 @charset "utf-8";
 
-.inav.botao {
+.inav .libotao, #menubotao{
     display: none;
 }
 
-menu {
-    
-    justify-content: space-between;
+nav {
+    width: 82vw;
 }
 
-.ulmenu {
+.sideul {
     display: flex;
-    
+    justify-content: space-between;
 }
 
   
