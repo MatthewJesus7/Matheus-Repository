@@ -112,6 +112,7 @@ p {
     display: flex;
     flex-direction: column;
     align-items: center;
+    box-shadow: inset 0px -3px 8px rgba(0, 0, 0, 0.200);
 }
 
 #profissao {
@@ -175,8 +176,16 @@ p {
     transition: all .4s;
 }
 
-.button-cta:active {
+/* .button-cta:active {
     box-sizing: border-box;
     background-color: var(--corDestaqueEscuro);
     transition: all .2s;
+} */
+
+#temporaria {
+    position: absolute;
+    width: 100%;
+    height: 40px;
+    background-color: var(--corBranco);
+    z-index: 2;
 }
