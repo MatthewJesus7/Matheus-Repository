@@ -32,4 +32,4 @@ function aparecerMenu() {
     
 }
 
-const buttonCta
+// const buttonCta
