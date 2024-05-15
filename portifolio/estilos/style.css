@@ -27,20 +27,33 @@ body {
     font: normal 20px var(--fonte);
 }
 
+p {
+    margin: 1.2em 0px;
+}
+
+#navbar {
+    /* position: fixed;
+    width: 100%; */
+}
+
 .navbar-list {
-    background-color: var(--corDestaqueEscuro);
+    background-color: var(--corClara);
     display: flex;
     justify-content: space-between;
+    align-items: center;
     padding: 10px 20px;
+
 }
 
 #menu {
     background-color: var(--corClara);
+    box-shadow: inset 1px 1px 3px rgba(0, 0, 0, 0.200);
     position: fixed;
     top: 0px;
     right: -200px;
     width: 200px;
     height: 100%;
+    z-index: 3;
 }
 
 .menu-item {
@@ -61,14 +74,14 @@ body {
 }
 
 .navbar-item a {
-    color: var(--corBranco);
+    color: var(--corDestaqueEscuro);
     text-decoration: none;
-    font-size: 20px;
+    font-size: 20px;padding-top: 10px;
 }
 
 .navbar-button { 
     background-color: var(--corTransparente);
-    color: var(--corBranco);
+    color: var(--corDestaqueEscuro);
     height: 50px;
     width: 50px;
     border: none;
@@ -76,26 +89,69 @@ body {
     transition: 0.3s ease-in-out;
 }
 
+.navbar-button:hover {
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.200);
+    transition: 0.3s ease-in-out;
+}
+
 .menu {
     transition: 0.6s ease-in-out;
 }
 
-
-
-.section-eu {
-    background-color: var(--corDestaqueEscuro);
-    color: var(--corBranco);
+.section {
+    background-color: var(--corClara);
+    color: var(--corDestaqueEscuro);
+    text-align: center;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.199);
+    padding: 0px 8% 5% 8%;
+    max-width: 1200px;
 }
 
-h1.nome {
-    font-size: 4em;
-    margin: 0px 10%;
+#profissao {
+    font-size: 170%;
 }
 
-.profissao {
-    margin: 10px;
+.aside-show-contact {
+    position: relative;
+    width: 100%;
+}
+
+.site-image {
+    position: absolute;
+    top: 0%;
+    left: 7%;
+    height: 300px;
+}
+
+.site-image-main {
+    background-color: white;
+    box-shadow:  2px -2px 5px rgba(0, 0, 0, 0.200);
+    border-radius: 8px;
+    height: 100%;
+    width: 178px;
+}
+
+.site-image-main-right {
+    position: relative;
+    right: -24.5%;
+    color: black;
+}
+
+.site-image-main-left {
+    position: relative;
+    left: 0%;
+    top: -90%;
 }
 
 .section-principal {
     background-color: var(--corClara);
+}
+
+.button-cta {
+    position: relative;
+    background-color: var(--corDestaqueT);
+    width:50%;
+    height: 50px;
+    margin: 100px 0px;
+    z-index: 1;
 }

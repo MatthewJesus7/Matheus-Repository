@@ -21,11 +21,13 @@ function aparecerMenu() {
         navbarList.style.marginRight = '0';
         menu.style.backgroundColor = ''
         menuButton.style.backgroundColor = ''
+        menuButton.style.color = ''
     } else {
         menu.style.right = '0px';
         navbarList.style.marginRight = '200px';
         menu.style.backgroundColor = corDestaqueEscuro
         menuButton.style.backgroundColor = corDestaqueEscuro
+        menuButton.style.color = corDestaqueClaro
     }
     
 }
