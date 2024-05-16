@@ -37,7 +37,7 @@ p {
 }
 
 .navbar-list {
-    background-color: var(--corTransparente);
+    background-color: var(--corClara);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -112,7 +112,7 @@ p {
     display: flex;
     flex-direction: column;
     align-items: center;
-    box-shadow: inset 0px -3px 8px rgba(0, 0, 0, 0.200);
+    box-shadow: inset 0px -3px 4px rgba(0, 0, 0, 0.200);
 }
 
 #profissao {
@@ -185,7 +185,7 @@ p {
 #temporaria {
     position: absolute;
     width: 100%;
-    height: 100px;
+    height: 50px;
     background-color: var(--corBranco);
     z-index: 2;
 }
